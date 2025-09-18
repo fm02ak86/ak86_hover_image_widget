@@ -1,0 +1,23 @@
+.ak86_hover_image_wrapper {
+    height: auto;
+}
+
+.ak86_hover_first_image {
+    position: relative; /* stays in flow, gives wrapper height */
+    z-index: 2;
+}
+
+.ak86_hover_second_image {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.ak86_hover_image_wrapper:hover .ak86_hover_first_image {
+    opacity: 0;
+}
+.ak86_hover_image_wrapper:hover .ak86_hover_second_image {
+    opacity: 1;
+}

@@ -16,10 +16,10 @@ class Base
 
     public function enqueueScripts()
     {
-        wp_register_style('akel-hover-image-widget-main-css', AKEL_HOVER_IMAGE_WIDGET_DIR . "/assets/css/main.css");
+        wp_register_style('akel-hover-image-widget-main-css', AKEL_HOVER_IMAGE_WIDGET_URL . "/assets/main.css");
         wp_enqueue_style('akel-hover-image-widget-main-css');
 
-        wp_register_script('akel-hover-image-widget-main-js', AKEL_HOVER_IMAGE_WIDGET_URL . "/assets/js/main.js");
+        wp_register_script('akel-hover-image-widget-main-js', AKEL_HOVER_IMAGE_WIDGET_URL . "/assets/main.js");
         wp_enqueue_script('akel-hover-image-widget-main-js');
     }
 

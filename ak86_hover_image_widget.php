@@ -34,6 +34,6 @@ const AKEL_HOVER_IMAGE_WIDGET_URL = WP_PLUGIN_URL . '/ak86_hover_image_widget';
 
 use AKEL_Hover_Image_Widget\Includes\Base;
 
-require_once AKEL_HOVER_IMAGE_WIDGET_DIR . '/includes/base.php';
+require_once __DIR__ . '/includes/base.php';
 
 new Base();
